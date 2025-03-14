@@ -7,11 +7,21 @@
     {% if description -%}
     <meta name="description" content="{{ description }}" />
     {% endif -%}
+    <link rel="stylesheet" href="/css/mvp.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="license" href="https://www.gnu.org/licenses/gpl-3.0.en.html" />
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <script src="/assets/js/botpoison.js" async></script>
+    <script type="module" async src="/assets/js/turbo.js"></script>
   </head>
-  <body {%- if css_class %} class="{{ css_class }}" {%- endif -%}>
-    <article>{{ content }}</article>
+  <body class="{% include 'page-class.liquid' %}{% if css_class %} {{ css_class }}{% endif %}">
+    {% include "navbar.html" %}
+    <main>
+      <article>{{ content }}</article>
+    </main>
+    <footer>
+      <p>&copy; {% comment %}Using "now" to get current date, then format to year{% endcomment %}
+      {{ "now" | date: "%Y" }} A & S Home Furnishings. All rights reserved.</p>
+    </footer>
   </body>
 </html>

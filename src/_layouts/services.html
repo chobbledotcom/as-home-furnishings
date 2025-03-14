@@ -1,0 +1,20 @@
+---
+layout: base.html
+---
+
+<article>
+  {{ content }}
+</article>
+
+<section class="services">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    {% assign services = collections.service | sort: "data.order" %}
+    {% for service in services %}
+      <a href="{{ service.url }}" class="service-card">
+        <img src="{{ service.data.thumb }}" alt="{{ service.data.navTitle }}">
+        <h3>{{ service.data.navTitle }}</h3>
+      </a>
+    {% endfor %}
+  </div>
+</section>

@@ -2,4 +2,49 @@
 layout: base.html
 ---
 
-{{ content }}
+<div class="hero">
+  <h1>A & S Home Furnishings</h1>
+  <p>Family-run furniture store in Barton-upon-Humber, serving Lincolnshire & surrounding areas</p>
+</div>
+
+<article>
+  {{ content }}
+
+  <div class="features">
+    <div class="feature">
+      <h3>Why Choose Us?</h3>
+      <ul>
+        <li><strong>Experienced staff</strong> with years in the business</li>
+        <li><strong>Affordable prices</strong> to suit all budgets</li>
+        <li><strong>Aftercare service</strong> for complete satisfaction</li>
+        <li><strong>Friendly & confidential</strong> customer service</li>
+      </ul>
+    </div>
+    <div class="feature">
+      <h3>Areas We Serve</h3>
+      <p>We proudly offer our furniture and services to customers across:</p>
+      <ul>
+        <li>Barton-Upon-Humber</li>
+        <li>Hull</li>
+        <li>Lincoln</li>
+        <li>Doncaster</li>
+        <li>Cleethorpes</li>
+        <li>Grimsby</li>
+        <li>Scunthorpe</li>
+      </ul>
+    </div>
+  </div>
+</article>
+
+<section class="services">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    {% assign services = collections.service | sort: "data.order" %}
+    {% for service in services %}
+      <a href="{{ service.url }}" class="service-card">
+        <img src="{{ service.data.thumb }}" alt="{{ service.data.navTitle }}">
+        <h3>{{ service.data.navTitle }}</h3>
+      </a>
+    {% endfor %}
+  </div>
+</section>
