@@ -22,6 +22,7 @@
         commonBuildInputs = with pkgs; [
           sass
           yarn
+          html-tidy
         ];
 
         site = pkgs.stdenv.mkDerivation {
@@ -35,8 +36,11 @@
           '';
 
           buildPhase = ''
+            export LANG=en_US.UTF-8
+            export LC_ALL=en_US.UTF-8
             sass --update src/_scss:_site/css --style compressed
             yarn --offline eleventy
+            find _site -name "*.html" -exec tidy --wrap 80 --indent auto --indent-spaces 2  --wrap 80 --quiet yes --tidy-mark no -modify {} \;
           '';
 
           installPhase = ''cp -r _site $out'';
@@ -64,6 +68,7 @@
           "build"
           "serve"
           "dryrun"
+          "tidy_html"
         ];
 
         scriptPackages = builtins.listToAttrs (
@@ -92,6 +97,7 @@
               echo "Run 'serve' to start development server"
               echo "Run 'build' to build the site in the _site directory"
               echo "Run 'dryrun' to do a dry run"
+              echo "Run 'tidy_html' to tidy and format HTML files"
             '';
           };
         };

@@ -112,7 +112,7 @@ header nav a {
 
 /* Navigation hover animation - underline effect */
 header nav ul > li > a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -228,41 +228,41 @@ header nav ul ul.dropdown a:hover {
     align-items: center;
     padding: 0;
   }
-  
+
   .team-member-bio {
     flex: 1;
   }
-  
+
   .team-member-image {
     flex: 0 0 auto;
     margin: 0 auto;
     width: 300px;
   }
-  
+
   .team-member-image img {
     margin: 0 auto;
     max-width: 300px;
     height: auto;
   }
-  
+
   /* Sally on the left */
   #sally {
     flex-direction: row-reverse;
   }
-  
+
   #sally .team-member-bio {
     padding-left: 2rem;
   }
-  
+
   /* Andy on the right */
   #andy {
     flex-direction: row;
   }
-  
+
   #andy .team-member-bio {
     padding-right: 2rem;
   }
-  
+
   /* Override the default image styling for team members */
   .team-member-image img {
     float: none !important;
@@ -514,7 +514,7 @@ main ul li {
 }
 
 main ul li::before {
-  content: "•";
+  content: "\25B8";  /* Unicode for right-pointing triangle */
   color: var(--color-primary);
   font-weight: bold;
   display: inline-block;
@@ -704,14 +704,6 @@ footer p {
 
   header nav ul ul.dropdown a[aria-current="page"]::before {
     width: 5px;
-  }
-
-  /* Add a toggle indicator for dropdown on mobile */
-  header nav li.has-dropdown > a::after {
-    content: " ▼";
-    font-size: 0.7rem;
-    vertical-align: middle;
-    margin-left: 0.5rem;
   }
 
   .services-grid {

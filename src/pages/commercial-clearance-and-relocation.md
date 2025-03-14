@@ -1,10 +1,8 @@
 ---
 title: Commercial Clearance and Relocation | A & S Home Furnishings
-description: Commercial clearances and relocation in Barton-Upon-Humber, Lincolnshire and surrounding areas
-permalink: /commercial-clearance-and-relocation/
-type: service
+description: Fast, efficient commercial clearance and relocation services in Barton-Upon-Humber, Lincolnshire and surrounding areas
 tags: service
-navTitle: Commercial Clearance
+nav_title: Commercial Clearance
 order: 12
 thumb: /assets/images/Commercial-Clearance-and-Relocation-A-and-S-Home-Furnishings-300x199.jpg
 ---

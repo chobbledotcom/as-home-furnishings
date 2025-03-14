@@ -1,10 +1,8 @@
 ---
 title: Upcycled and Pre-loved Furniture | A & S Home Furnishings
 description: Quality upcycled and pre-loved furniture available in Barton-Upon-Humber and surrounding areas
-permalink: /upcycled-and-pre-loved-furniture/
-type: service
 tags: service
-navTitle: Upcycled Furniture
+nav_title: Upcycled Furniture
 order: 9
 thumb: /assets/images/Upcycled-Furniture-Chest-A-S-Home-Furnishings-300x225.jpg
 ---

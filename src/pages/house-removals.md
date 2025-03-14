@@ -1,10 +1,8 @@
 ---
 title: House Removals | A & S Home Furnishings
-description: Professional home removals in Barton-Upon-Humber, Lincolnshire and surrounding areas
-permalink: /house-removals/
-type: service
+description: Professional and reliable home removal services in Barton-Upon-Humber, Lincolnshire and surrounding areas
 tags: service
-navTitle: House Removals
+nav_title: House Removals
 order: 11
 thumb: /assets/images/Home-Removals-A-S-Home-Furnishings-300x200.jpg
 ---

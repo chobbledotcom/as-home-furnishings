@@ -1,10 +1,8 @@
 ---
 title: New Furniture | A & S Home Furnishings
-description: New furniture available in Barton-Upon-Humber, Lincolnshire and surrounding areas
-permalink: /new-furniture/
-type: service
+description: Quality new furniture for sale in Barton-Upon-Humber, Lincolnshire and surrounding areas
 tags: service
-navTitle: New Furniture
+nav_title: New Furniture
 order: 8
 thumb: /assets/images/New-Furniture-Bed-A-S-Home-Furnishings-300x218.jpg
 ---

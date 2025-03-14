@@ -1,9 +1,8 @@
 ---
 title: About Us | A & S Home Furnishings
 description: Meet Andy and Sally, the family behind A & S Home Furnishings in Barton-upon-Humber
-permalink: /about/
-navItem: true
-navTitle: About
+nav_item: true
+nav_title: About
 order: 2
 ---
 

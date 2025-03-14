@@ -6,23 +6,23 @@
     <ul>
       {% assign mainPages = collections.page | sort: "data.order" %}
       {% for navPage in mainPages %}
-        {% if navPage.data.navItem and navPage.data.navTitle != "Services" and navPage.data.type != "service" %}
+        {% if navPage.data.nav_item and navPage.data.nav_title != "Services" %}
           <li>
             <a href="{{ navPage.url }}" {% if page.url == navPage.url %}aria-current="page"{% endif %}>
-              {{ navPage.data.navTitle | default: navPage.data.title }}
+              {{ navPage.data.nav_title | default: navPage.data.title }}
             </a>
           </li>
-        {% elsif navPage.data.navTitle == "Services" %}
+        {% elsif navPage.data.nav_title == "Services" %}
           <li class="has-dropdown">
             <a href="{{ navPage.url }}" {% if page.url == navPage.url or page.url == '/services/' %}aria-current="page"{% endif %}>
-              {{ navPage.data.navTitle | default: navPage.data.title }}
+              {{ navPage.data.nav_title | default: navPage.data.title }}
             </a>
             <ul class="dropdown">
               {% assign servicePages = collections.service | sort: "data.order" %}
               {% for servicePage in servicePages %}
                 <li>
                   <a href="{{ servicePage.url }}" {% if page.url == servicePage.url %}aria-current="page"{% endif %}>
-                    {{ servicePage.data.navTitle | default: servicePage.data.title }}
+                    {{ servicePage.data.nav_title | default: servicePage.data.title }}
                   </a>
                 </li>
               {% endfor %}

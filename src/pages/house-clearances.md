@@ -1,10 +1,8 @@
 ---
 title: House Clearances | A & S Home Furnishings
-description: House clearances in Barton-Upon-Humber, Lincolnshire and surrounding areas
-permalink: /house-clearances/
-type: service
+description: Professional and efficient house clearance services in Barton-Upon-Humber, Lincolnshire and surrounding areas
 tags: service
-navTitle: House Clearances
+nav_title: House Clearances
 order: 10
 thumb: /assets/images/House-Clearances-A-and-S-Home-Furnishings-Van-300x225.jpg
 ---

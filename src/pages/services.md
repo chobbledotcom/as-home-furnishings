@@ -2,9 +2,8 @@
 layout: services.html
 title: Services | A & S Home Furnishings
 description: House clearances, removals, upcycled furniture and new furniture in Barton-Upon-Humber
-permalink: /services/
-navItem: true
-navTitle: Services
+nav_item: true
+nav_title: Services
 order: 3
 ---
 
@@ -15,7 +14,7 @@ A & S Home Furnishings offers a range of services including:
 - House clearances
 - House removals
 - Commercial clearances
-- New furniture 
+- New furniture
 - Upcycled and pre-loved furniture
 
 More information coming soon.

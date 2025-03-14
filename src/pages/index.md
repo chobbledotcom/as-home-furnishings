@@ -3,8 +3,8 @@ layout: home.html
 title: A & S Home Furnishings | Furniture Store in Barton-upon-Humber
 description: Family-run furniture store in Barton-upon-Humber, serving Lincolnshire & surrounding areas
 permalink: /
-navItem: true
-navTitle: Home
+nav_item: true
+nav_title: Home
 order: 1
 ---
 
