@@ -1,42 +1,27 @@
-# Empty Eleventy Template, using Nix
+# A&S Home Furnishings Website
 
-This template should let you get started with the Eleventy static site builder on NixOS / Nix, really easily.
+This repository contains the website for A&S Home Furnishings. 
 
-Featuring Nix'y features like:
+## Quick Links
 
-- [direnv](https://direnv.net/) support via `flake.nix` - run `direnv allow`
-- or run `nix develop` if you don't have direnv
-- `nix-build` support using `flake-compat`
-- `serve` shell script to run Eleventy and SASS locally
-- `build` shell script to build the site into `_site`
+### Edit Main Pages
+- [Homepage](src/pages/index.md)
+- [About Us](src/pages/about.md)
+- [Services](src/pages/services.md)
+- [House Clearances](src/pages/house-clearances.md)
+- [House Removals](src/pages/house-removals.md)
+- [Commercial Clearance](src/pages/commercial-clearance-and-relocation.md)
+- [New Furniture](src/pages/new-furniture.md)
+- [Upcycled Furniture](src/pages/upcycled-and-pre-loved-furniture.md)
+- [Contact](src/pages/contact.md)
 
-And Eleventy features like:
+### Website Management
+- [Site Configuration](src/_data/site.json)
+- [Upload Images](src/assets/images/)
+- [Edit CSS](src/_scss/style.scss)
 
-- Canonical URLs
-- A directory to store favicon cruft
-- A `_data/site.json` metadata store
-- An `collection.images` collection of the files in `src/images`
+## Development
 
-## Changing Packages
-
-If you want to change the packages in `packages.json`, here's the steps:
-
-- Remove all `nodeModules` lines from `node-deps.nix` and `flake.nix`
-- Use `direnv reload` or `nix develop` to get a dev shell
-- Add the new packages to `node-deps.nix` and run `direnv reload` to re-build `packages.json`
-- Run `yarn -l` to create a new `yard.lock`
-- Re-add the `nodeModule` lines to `node-deps.nix` and `flake.nix`
-
-## Upgrading Packages
-
-This is a little fiddlier:
-
-- Remove all `nodeModules` lines from `node-deps.nix` and `flake.nix`
-- Copy the generated `package.json` to your clipboard
-- Delete `package.json` to remove the symbolic link
-- Paste your clipbard back into a new `package.json`
-- Run `yarn upgrade` to create a new `yarn.lock` and update `package.json`
-- Copy those new version numbers from `package.json` to `node-deps.nix`
-- Re-add the `nodeModule` lines to `node-deps.nix` and `flake.nix`
-
-..I do intend to make those steps simpler some day. If you've got ideas of how I could, please contact me!
+- Run `bin/serve` to preview the site locally
+- Run `bin/build` to build the site for production
+- Run `bin/dryrun` to test the build without deploying
