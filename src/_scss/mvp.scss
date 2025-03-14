@@ -15,7 +15,8 @@
   --color-text: #000;
   --color-text-secondary: #999;
   --color-scrollbar: #cacae8;
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   --hover-brightness: 1.2;
   --justify-important: center;
   --justify-normal: left;
@@ -66,14 +67,6 @@ body {
   margin: 0;
   overflow-x: hidden;
   padding: 0;
-}
-
-footer,
-header,
-main {
-  margin: 0 auto;
-  max-width: var(--width-content);
-  padding: 3rem 1rem;
 }
 
 hr {
@@ -150,7 +143,6 @@ nav {
   display: flex;
   font-weight: bold;
   justify-content: space-between;
-  margin-bottom: 7rem;
 }
 
 nav ul {

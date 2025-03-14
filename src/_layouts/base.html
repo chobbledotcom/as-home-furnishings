@@ -16,12 +16,16 @@
   </head>
   <body class="{% include 'page-class.liquid' %}{% if css_class %} {{ css_class }}{% endif %}">
     {% include "navbar.html" %}
-    <main>
-      <article>{{ content }}</article>
-    </main>
+    {{ content }}
     <footer>
-      <p>&copy; {% comment %}Using "now" to get current date, then format to year{% endcomment %}
-      {{ "now" | date: "%Y" }} A & S Home Furnishings. All rights reserved.</p>
+      <div class="container">
+        <p>&copy; {% comment %}Using "now" to get current date, then format to year{% endcomment %}
+        {{ "now" | date: "%Y" }} A & S Home Furnishings. All rights reserved.
+        {% if page.url == "/" %}
+        <br>Website by <a href="https://chobble.com" rel="nofollow">Chobble</a>
+        {% endif %}
+        </p>
+      </div>
     </footer>
   </body>
 </html>

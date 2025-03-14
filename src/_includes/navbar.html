@@ -1,35 +1,37 @@
 <header>
-  <nav>
-    <a href="/" {% if page.url == '/' %}aria-current="page"{% endif %}>
-      <img src="/assets/images/cropped-AS-Logo-60x60cm-137x128.png" alt="A and S Home Furnishings Logo" width="137" height="128">
-    </a>
-    <ul>
-      {% assign mainPages = collections.page | sort: "data.order" %}
-      {% for navPage in mainPages %}
-        {% if navPage.data.nav_item and navPage.data.nav_title != "Services" %}
-          <li>
-            <a href="{{ navPage.url }}" {% if page.url == navPage.url %}aria-current="page"{% endif %}>
-              {{ navPage.data.nav_title | default: navPage.data.title }}
-            </a>
-          </li>
-        {% elsif navPage.data.nav_title == "Services" %}
-          <li class="has-dropdown">
-            <a href="{{ navPage.url }}" {% if page.url == navPage.url or page.url == '/services/' %}aria-current="page"{% endif %}>
-              {{ navPage.data.nav_title | default: navPage.data.title }}
-            </a>
-            <ul class="dropdown">
-              {% assign servicePages = collections.service | sort: "data.order" %}
-              {% for servicePage in servicePages %}
-                <li>
-                  <a href="{{ servicePage.url }}" {% if page.url == servicePage.url %}aria-current="page"{% endif %}>
-                    {{ servicePage.data.nav_title | default: servicePage.data.title }}
-                  </a>
-                </li>
-              {% endfor %}
-            </ul>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </nav>
+  <div class="container">
+    <nav>
+      <a href="/" {% if page.url == '/' %}aria-current="page"{% endif %}>
+        <img src="/assets/images/cropped-AS-Logo-60x60cm-137x128.png" alt="A and S Home Furnishings Logo" width="137" height="128">
+      </a>
+      <ul>
+        {% assign mainPages = collections.page | sort: "data.order" %}
+        {% for navPage in mainPages %}
+          {% if navPage.data.nav_item and navPage.data.nav_title != "Services" %}
+            <li>
+              <a href="{{ navPage.url }}" {% if page.url == navPage.url %}aria-current="page"{% endif %}>
+                {{ navPage.data.nav_title | default: navPage.data.title }}
+              </a>
+            </li>
+          {% elsif navPage.data.nav_title == "Services" %}
+            <li class="has-dropdown">
+              <a href="{{ navPage.url }}" {% if page.url == navPage.url or page.url == '/services/' %}aria-current="page"{% endif %}>
+                {{ navPage.data.nav_title | default: navPage.data.title }}
+              </a>
+              <ul class="dropdown">
+                {% assign servicePages = collections.service | sort: "data.order" %}
+                {% for servicePage in servicePages %}
+                  <li>
+                    <a href="{{ servicePage.url }}" {% if page.url == servicePage.url %}aria-current="page"{% endif %}>
+                      {{ servicePage.data.nav_title | default: servicePage.data.title }}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
 </header>

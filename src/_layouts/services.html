@@ -2,19 +2,23 @@
 layout: base.html
 ---
 
-<article>
-  {{ content }}
-</article>
+<main>
+  <article>
+    {{ content }}
+  </article>
+</main>
 
 <section class="services">
-  <h2>Our Services</h2>
-  <div class="services-grid">
-    {% assign services = collections.service | sort: "data.order" %}
-    {% for service in services %}
-      <a href="{{ service.url }}" class="service-card">
-        <img src="{{ service.data.thumb }}" alt="{{ service.data.nav_title }}">
-        <h3>{{ service.data.nav_title }}</h3>
-      </a>
-    {% endfor %}
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      {% assign services = collections.service | sort: "data.order" %}
+      {% for service in services %}
+        <a href="{{ service.url }}" class="service-card">
+          <img src="{{ service.data.thumb }}" alt="{{ service.data.nav_title }}">
+          <h3>{{ service.data.nav_title }}</h3>
+        </a>
+      {% endfor %}
+    </div>
   </div>
 </section>
