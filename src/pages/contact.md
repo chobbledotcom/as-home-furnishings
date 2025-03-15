@@ -4,6 +4,7 @@ description: Get in touch with A & S Home Furnishings in Barton-Upon-Humber
 nav_item: true
 nav_title: Contact
 order: 4
+layout: contact.html
 ---
 
 # Contact
@@ -22,19 +23,15 @@ No job is too big or too small for us to undertake. Feel free to get in touch wi
 
 **Email:** info@ashomefurnishings.co.uk
 
-**Address:**  
-A & S Home Furnishings  
-Barton-upon-Humber  
+**Address:**
+A & S Home Furnishings
+Barton-upon-Humber
 North Lincolnshire
 
-**Opening Hours:**  
-Monday - Saturday: 9am - 5pm  
+**Opening Hours:**
+Monday - Saturday: 9am - 5pm
 Sunday: Closed
 
 ### Get In Touch
 
 Please feel free to contact us with any questions or inquiries using the form below:
-
-<div class="contact-form-container">
-{% include "contact-form.html" %}
-</div>

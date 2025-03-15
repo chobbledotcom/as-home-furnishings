@@ -5,8 +5,6 @@ layout: base.html
 <main>
   <article>
     {{ content }}
-    <p class="contact-cta">
-      <a href="/contact/"> Contact Us </a>
-    </p>
+    <div class="contact-form-container">{% include "contact-form.html" %}</div>
   </article>
 </main>
