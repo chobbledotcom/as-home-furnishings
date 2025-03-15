@@ -8,9 +8,9 @@ nav_title: Home
 order: 1
 ---
 
-## Welcome to A & S Furnishings
+## Welcome to A & S Home Furnishings
 
-Established in 2016, A & S Home Furnishings is your one-stop destination for all your house furniture needs, house removals and property clearance solutions in Barton-Upon-Humber. 
+Established in 2016, A & S Home Furnishings is your one-stop destination for all your house furniture needs, house removals and property clearance solutions in Barton-Upon-Humber.
 
 ## Excellent Value for Money
 
