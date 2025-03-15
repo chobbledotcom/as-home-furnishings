@@ -8,6 +8,7 @@ This repository contains the website for A&S Home Furnishings.
 - [Homepage](src/pages/index.md)
 - [About Us](src/pages/about.md)
 - [Services](src/pages/services.md)
+- [Reviews](src/pages/reviews.md)
 - [House Clearances](src/pages/house-clearances.md)
 - [House Removals](src/pages/house-removals.md)
 - [Commercial Clearance](src/pages/commercial-clearance-and-relocation.md)
