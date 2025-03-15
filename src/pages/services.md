@@ -11,12 +11,12 @@ order: 3
 
 A & S Home Furnishings offers a range of services including:
 
-- House clearances
-- House removals
-- Commercial clearances
-- New furniture
-- Upcycled and pre-loved furniture
+{% assign services = collections.service | sort: "data.order" %}
 
-More information coming soon.
+<ul>
+{% for service in services -%}
+<li><a href="{{ service.url }}">{{ service.data.nav_title }}</a></li>
+{%- endfor %}
+</ul>
 
 For all enquiries, call Andy on **[07719 519 745](tel:07719519745)**
