@@ -12,7 +12,7 @@ This repository contains the website for A&S Home Furnishings.
 - [House Removals](src/pages/house-removals.md)
 - [Commercial Clearance](src/pages/commercial-clearance-and-relocation.md)
 - [New Furniture](src/pages/new-furniture.md)
-- [Upcycled Furniture](src/pages/upcycled-and-pre-loved-furniture.md)
+- [New Beds](src/pages/new-beds.md)
 - [Contact](src/pages/contact.md)
 
 ### Website Management
