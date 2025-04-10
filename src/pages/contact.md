@@ -21,7 +21,7 @@ No job is too big or too small for us to undertake. Feel free to get in touch wi
 
 **Phone:** [07719 519 745](tel:07719519745)
 
-**Email:** info@ashomefurnishings.co.uk
+**Email:** [info@ashomefurnishings.co.uk](mailto:info@ashomefurnishings.co.uk)
 
 **Address:**
 A & S Home Furnishings
