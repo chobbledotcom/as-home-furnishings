@@ -40,7 +40,7 @@
             export LC_ALL=en_US.UTF-8
             sass --update src/_scss:_site/css --style compressed
             yarn --offline eleventy
-            find _site -name "*.html" -exec tidy --wrap 80 --indent auto --indent-spaces 2  --wrap 80 --quiet yes --tidy-mark no -modify {} \;
+            find _site -name "*.html" -exec tidy --wrap 80 --indent auto --indent-spaces 2  --wrap 80 --quiet yes --tidy-mark no -modify --warn-proprietary-attributes no {} \;
           '';
 
           installPhase = ''cp -r _site $out'';
