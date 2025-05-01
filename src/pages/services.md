@@ -15,7 +15,7 @@ A & S Home Furnishings offers a range of services including:
 
 <ul>
 {% for service in services -%}
-<li><a href="{{ service.url }}">{{ service.data.nav_title }}</a></li>
+<li><a href="{{ service.url }}#content">{{ service.data.nav_title }}</a></li>
 {%- endfor %}
 </ul>
 
