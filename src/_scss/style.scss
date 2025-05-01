@@ -737,7 +737,7 @@ footer a {
     position: relative;
   }
 
-  header nav a[aria-current="page"]::before {
+  header nav ul a[aria-current="page"]::before {
     content: "";
     position: absolute;
     left: 0;
