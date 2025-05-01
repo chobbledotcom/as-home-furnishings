@@ -8,7 +8,7 @@ order: 3
 
 # Our Reviews
 
-Many thanks to the people who have reviews on our [Facebook page](https://www.facebook.com/andyandsally) and on our [Google Maps listing](https://g.co/kgs/Mf53c9T).
+Many thanks to the people who have left reviews on our [Facebook page](https://www.facebook.com/andyandsally) and on our [Google Maps listing](https://g.co/kgs/Mf53c9T).
 
 Here's a selection of some recent ones!
 
