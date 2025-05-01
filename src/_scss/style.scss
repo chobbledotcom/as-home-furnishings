@@ -11,9 +11,9 @@
 
 /* Variables */
 :root {
-  --color-primary: #fc1616; /* Red from logo */
+  --color-primary: #e30303;
   --color-secondary: #1e1e1e; /* Near black */
-  --color-accent: #fc1616; /* Red from logo */
+  --color-accent: #e30303;
   --color-text: #333;
   --color-background: #fff;
   --color-light: #f9f9f9; /* Light gray */
@@ -193,6 +193,7 @@ nav > a[aria-current="page"] {
   border-bottom: none !important;
   background-color: transparent !important;
   color: inherit !important;
+  font-weight: bold;
 }
 
 header > nav > a[aria-current="page"]::before {
