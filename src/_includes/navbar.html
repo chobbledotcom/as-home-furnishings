@@ -2,7 +2,11 @@
   <div class="container">
     <nav>
       <a href="/" {% if page.url == '/' %}aria-current="page"{% endif %}>
-        <img src="/assets/images/cropped-AS-Logo-60x60cm-137x128.png" alt="A and S Home Furnishings Logo" width="137" height="128">
+        <img
+          src="/assets/images/as-home-furnishings-logo.png"
+          alt="A&amp;S Home Furnishings Logo"
+          width="160"
+        >
       </a>
       <ul>
         {% assign mainPages = collections.page | sort: "data.order" %}
