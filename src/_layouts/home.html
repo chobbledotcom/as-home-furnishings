@@ -51,7 +51,7 @@ layout: base.html
       {% assign services = collections.service | sort: "data.order" %}
       {% for service in services %}
         <a href="{{ service.url }}" class="service-card">
-          <img src="{{ service.data.thumb }}" alt="{{ service.data.nav_title }}">
+          <img src="{{ service.data.thumb }}" alt="">
           <h3>{{ service.data.nav_title }}</h3>
         </a>
       {% endfor %}
