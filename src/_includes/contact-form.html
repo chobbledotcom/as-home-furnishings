@@ -1,4 +1,5 @@
 <form
+  id="contact-form"
   method="POST"
   action="https://submit-form.com/{{ site.formspark_id }}"
   data-botpoison-public-key="pk_bbb182a9-1ff3-4d9a-839c-06e45f41a6e6"
@@ -55,3 +56,20 @@
   </label>
   <button type="submit">Send Enquiry</button>
 </form>
+
+<script>
+  var formElement = document.getElementById("contact-form");
+  var buttonElement = document.getElementById("button");
+  formElement.addEventListener("botpoison-challenge-start", () => {
+    console.log("Starting Botpoison challenge")
+    buttonElement.setAttribute("disabled", "disabled");
+  });
+  formElement.addEventListener("botpoison-challenge-success", () => {
+    console.log("Botpoison challenge success")
+    buttonElement.removeAttribute("disabled");
+  });
+  formElement.addEventListener("botpoison-challenge-error", () => {
+    console.log("Botpoison challenge error")
+    buttonElement.removeAttribute("disabled");
+  });
+</script>
