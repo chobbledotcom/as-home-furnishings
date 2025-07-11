@@ -59,7 +59,7 @@
 
 <script>
   var formElement = document.getElementById("contact-form");
-  var buttonElement = document.getElementById("button");
+  var buttonElement = formElement.querySelector("button");
   formElement.addEventListener("botpoison-challenge-start", () => {
     console.log("Starting Botpoison challenge")
     buttonElement.setAttribute("disabled", "disabled");
