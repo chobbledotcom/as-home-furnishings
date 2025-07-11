@@ -55,20 +55,3 @@
   </label>
   <button type="submit">Send Enquiry</button>
 </form>
-
-<script>
-  var formElement = document.getElementById("contact-form");
-  var buttonElement = formElement.querySelector("button");
-  formElement.addEventListener("botpoison-challenge-start", () => {
-    console.log("Starting Botpoison challenge")
-    buttonElement.setAttribute("disabled", "disabled");
-  });
-  formElement.addEventListener("botpoison-challenge-success", () => {
-    console.log("Botpoison challenge success")
-    buttonElement.removeAttribute("disabled");
-  });
-  formElement.addEventListener("botpoison-challenge-error", () => {
-    console.log("Botpoison challenge error")
-    buttonElement.removeAttribute("disabled");
-  });
-</script>
