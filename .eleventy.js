@@ -1,11 +1,21 @@
 const path = require("path");
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const fg = require("fast-glob");
+const { configureScss } = require("./_lib/scss");
 
 const images = fg.sync(["src/images/*.jpg"]);
 
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
+  const { EleventyRenderPlugin } = await import("@11ty/eleventy");
+
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addWatchTarget("./src/**/*");
+
+  // Configure SCSS compilation
+  configureScss(eleventyConfig);
+
+  // Ignore SCSS partials (files starting with underscore)
+  eleventyConfig.ignores.add("src/**/_*.scss");
 
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     formats: ["webp", "jpeg"],
@@ -22,7 +32,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy({
-    "src/assets/favicon.ico": "/",
+    "src/assets/favicon.ico": "/favicon.ico",
   });
 
   eleventyConfig.addCollection("images", (collection) => {
@@ -37,7 +47,7 @@ module.exports = function (eleventyConfig) {
       layouts: "_layouts",
       data: "_data",
     },
-    templateFormats: ["liquid", "md", "njk"],
+    templateFormats: ["liquid", "md", "njk", "scss"],
     htmlTemplateEngine: "liquid",
     markdownTemplateEngine: "liquid",
   };

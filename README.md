@@ -19,10 +19,11 @@ This repository contains the website for A&S Home Furnishings.
 ### Website Management
 - [Site Configuration](src/_data/site.json)
 - [Upload Images](src/assets/images/)
-- [Edit CSS](src/_scss/style.scss)
+- [Edit CSS](src/css/style.scss)
 
 ## Development
 
-- Run `bin/serve` to preview the site locally
-- Run `bin/build` to build the site for production
-- Run `bin/dryrun` to test the build without deploying
+- Run `nix develop` to enter the development environment
+- Run `npm run serve` to preview the site locally
+- Run `npm run build` to build the site for production
+- Run `bin/lint` to format code with Biome
