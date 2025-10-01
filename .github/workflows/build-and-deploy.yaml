@@ -61,7 +61,7 @@ jobs:
           access-key: ${{ secrets.BUNNY_ACCESS_KEY }}
           directory-to-upload: _site
           storage-endpoint: "https://storage.bunnycdn.com"
-          storage-zone-name: "ashomefurnishings"
+          storage-zone-name: "as-home-furnishings"
           storage-zone-password: ${{ secrets.BUNNY_STORAGE_ZONE_PASSWORD }}
           concurrency: "5"
           enable-delete-action: true
