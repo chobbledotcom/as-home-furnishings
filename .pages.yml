@@ -1,4 +1,7 @@
-# Pages CMS Configuration for A & S Home Furnishings
+settings:
+  hide: true
+  content:
+    merge: true
 
 # Media configuration
 media:
