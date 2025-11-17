@@ -5,8 +5,8 @@ tags: service
 nav_title: New Beds
 order: 9
 thumb: /assets/images/Upcycled-Furniture-Chest-A-S-Home-Furnishings-300x225.jpg
-nav_item: true
 ---
+
 # New Beds for Sale
 
 ![Upcycled Furniture Chest](/assets/images/upcycled-furniture-chest.jpg)

@@ -74,11 +74,10 @@ content:
         type: rich-text
         description: Main page content
 
-  # Service Pages Collection
   - name: services
     label: Services
     type: collection
-    path: src/pages
+    path: src/services
     filter:
       field: tags
       value: service
@@ -130,71 +129,3 @@ content:
         type: rich-text
         description: Service page content
 
-  # All Pages (for managing pages without filters)
-  - name: all-pages
-    label: All Pages
-    type: collection
-    path: src/pages
-    view:
-      fields: [title, nav_title, order]
-      sort:
-        field: order
-        direction: asc
-    fields:
-      - name: title
-        label: Title
-        type: string
-        required: true
-        description: Full page title
-
-      - name: description
-        label: Description
-        type: string
-        required: true
-        description: Page description for SEO
-
-      - name: layout
-        label: Layout
-        type: string
-        description: Template layout file
-
-      - name: permalink
-        label: Permalink
-        type: string
-        description: Custom URL path
-
-      - name: nav_item
-        label: Show in Navigation
-        type: boolean
-        default: false
-        description: Display in main navigation menu
-
-      - name: nav_title
-        label: Navigation Title
-        type: string
-        description: Short title for navigation
-
-      - name: order
-        label: Order
-        type: number
-        description: Display order
-
-      - name: tags
-        label: Tags
-        type: string
-        description: Content tags (e.g., "service")
-
-      - name: thumb
-        label: Thumbnail Image
-        type: image
-        description: Thumbnail image
-
-      - name: heading_text
-        label: Heading Text
-        type: string
-        description: Alternative heading text
-
-      - name: body
-        label: Body
-        type: rich-text
-        description: Page content
