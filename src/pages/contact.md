@@ -18,7 +18,12 @@ No job is too big or too small for us to undertake. Feel free to get in touch wi
 
 ### Contact Details
 
-**Phone:** [07719 519 745 Andy 07719 525 937 Sally](tel:07719519745)
+**Phone:**
+
+*   [07719 519 745 Andy](tel:07719519745)
+    
+*   [07719 525 937 Sally](tel:07719525937)
+    
 
 **Email:** [asclearances@outlook.com](mailto:asclearances@outlook.com)
 
