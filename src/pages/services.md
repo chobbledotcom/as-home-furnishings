@@ -1,13 +1,12 @@
 ---
 layout: services.html
 title: Services | A & S Home Furnishings
-description: House clearances, removals and Brand new Beds, mattresses, top
+description: House clearances, removals and brand new beds, mattresses, top
   brand sofas and furniture in Barton-Upon-Humber
 nav_item: true
 nav_title: Services
 order: 3
 ---
-
 # Services
 
 A & S Home Furnishings offers a range of services including:
