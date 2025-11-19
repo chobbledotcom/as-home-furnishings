@@ -12,8 +12,8 @@ contact_text: For all enquiries, call Andy on **[07719 519 745](tel:07719519745)
 ---
 # Services
 
-{{ services\_intro }}
+{{ services_intro }}
 
 {% include "service-listing.html" %}
 
-{{ contact\_text }}
+{{ contact_text }}
