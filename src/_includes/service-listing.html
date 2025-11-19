@@ -1,3 +1,7 @@
-{% assign services = collections.service | sort: "data.order" %} {% for service
-in services -%} * [{{ service.data.nav_title }}]({{ service.url }}#content) {%-
-endfor %}
+{% assign services = collections.service | sort: "data.order" %}
+
+<ul>
+  {% for service in services -%}
+  <li><a href="{{ service.url }}#content">{{ service.data.nav_title }}</a></li>
+  {%- endfor %}
+</ul>
