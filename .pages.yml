@@ -69,11 +69,6 @@ content:
         type: string
         description: Alternative heading text (optional, overrides title)
 
-      - name: services_heading
-        label: Services Section Heading
-        type: string
-        description: Heading for the services grid section
-
       - name: body
         label: Body
         type: rich-text

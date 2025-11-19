@@ -6,7 +6,6 @@ description: House clearances, removals and Brand new Beds, mattresses, top
 nav_item: true
 nav_title: Services
 order: 3
-services_heading: Our Services
 ---
 
 # Services
