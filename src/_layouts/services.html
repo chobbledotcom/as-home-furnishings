@@ -3,21 +3,22 @@ layout: base.html
 ---
 
 <main>
-  <article>
-    {{ content }}
-  </article>
+  <article>{{ content }}</article>
 </main>
 
 <section class="services">
   <div class="container">
-    <h2>Our Services</h2>
+    <h2>{{ services_heading }}</h2>
     <div class="services-grid">
-      {% assign services = collections.service | sort: "data.order" %}
-      {% for service in services %}
-        <a href="{{ service.url }}" class="service-card">
-          <img src="{{ service.data.thumb }}" alt="{{ service.data.nav_title }}">
-          <h3>{{ service.data.nav_title }}</h3>
-        </a>
+      {% assign services = collections.service | sort: "data.order" %} {% for
+      service in services %}
+      <a href="{{ service.url }}" class="service-card">
+        <img
+          src="{{ service.data.thumb }}"
+          alt="{{ service.data.nav_title }}"
+        />
+        <h3>{{ service.data.nav_title }}</h3>
+      </a>
       {% endfor %}
     </div>
   </div>

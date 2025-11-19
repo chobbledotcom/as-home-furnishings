@@ -69,6 +69,21 @@ content:
         type: string
         description: Alternative heading text (optional, overrides title)
 
+      - name: services_heading
+        label: Services Section Heading
+        type: string
+        description: Heading for the services grid section
+
+      - name: services_intro
+        label: Services Introduction
+        type: rich-text
+        description: Introduction text before the service list
+
+      - name: contact_text
+        label: Contact Text
+        type: rich-text
+        description: Contact information displayed at bottom of page
+
       - name: body
         label: Body
         type: rich-text
@@ -128,4 +143,3 @@ content:
         label: Body
         type: rich-text
         description: Service page content
-
