@@ -74,16 +74,6 @@ content:
         type: string
         description: Heading for the services grid section
 
-      - name: services_intro
-        label: Services Introduction
-        type: rich-text
-        description: Introduction text before the service list
-
-      - name: contact_text
-        label: Contact Text
-        type: rich-text
-        description: Contact information displayed at bottom of page
-
       - name: body
         label: Body
         type: rich-text
