@@ -9,7 +9,7 @@ thumb: /assets/images/brand-new-sofas.jpg
 
 # New Beds for Sale
 
-![Upcycled Furniture Chest](/assets/images/upcycled-furniture-chest.jpg)
+![Upcycled Furniture Chest](/assets/images/beds-and-mattresses.jpg)
 
 Sleep better, live better !
 
