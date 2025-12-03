@@ -4,7 +4,7 @@ description: New beds for sale in Barton-Upon-Humber and surrounding areas
 tags: service
 nav_title: New Beds
 order: 9
-thumb: /assets/images/Upcycled-Furniture-Chest-A-S-Home-Furnishings-300x225.jpg
+thumb: /assets/images/brand-new-sofas.jpg
 ---
 
 # New Beds for Sale
